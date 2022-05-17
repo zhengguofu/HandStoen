@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+/* body {
+    background-color: #ff0000;
+    width: 100%;
+    hei
+} */
+.container {
+    background-color: #fff;
+}
+/* header */
+
+
+header {
+    background-color: #5a5656;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    z-index: 200;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    /* opacity: 0.8; */
+
+
+}
+
+header .login {
+    margin-left: 35px;
+    color: rgb(253, 190, 126);
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header .nav {
+    justify-self: end;
+}
+header #list {
+    position: absolute;
+    right: 530PX;
+    top: 79px;
+    display: none;  
+}
+header #list li {
+    clear: both;
+}
+header li {
+    padding: 15px;
+    float: left;
+    list-style-type: none;
+
+    
+}
+
+
+header #list li:hover {
+    background-color: rgb(253, 190, 126);
+}
+header ul li a {
+    color: #fff;
+}
+header .nav a {
+    margin: 0 24px;
+    color: #d7d7d7;
+}
+
+.nav_5:hover #list {
+    display: block;
+}
+
+/* header_center_img */
+/* 767 */
+header .burger-line {
+    display: none;
+}
+
+
+
+
+
+
+/* header_响应式 */
+@media screen and (max-width: 1282px) {
+    header .nav {
+        display: none;
+    }
+
+    /* 显示3条小缸 */
+    .burger {
+        position: absolute;
+        right: 15px;
+    }
+    
+    header .burger-line1,
+    header .burger-line2,
+    header .burger-line3 {
+        background-color: #fff;
+        width: 37px;
+        height: 5px;
+        display: block;
+        margin: 5px;
+        display: flex;
+        justify-content:end;
+    }
+    /* 显示 */
+    .nav_bu_1282 {
+        margin-top: 200px;
+        position: absolute;
+        right: 10px;
+        top: -140px;
+        background-color: rgb(66, 66, 66);
+        opacity: 0.5;
+        /* 默认隐藏_js_点击后显示 */
+        display: none;
+    }
+
+    .nav_bu_1282  a {
+        color: #fff;
+        font-size: 16px;
+        margin: 15px;
+        display: flex;
+        justify-content: end;
+        
+    }
+    .nav_bu_1282:hover {
+        cursor: pointer;
+    }
+
+    /* login */
+    header .login {
+        font-size: 16px;
+        position: absolute;
+    }
+
+
+}
+/* 大于1280那么这个小的导航栏，就隐藏 */
+@media screen and (min-width: 1282px) {
+    .nav_bu_1282,
+    .nav_bu_1282 a {
+        display:none;
+    }
+}
+
+
+/* 评论区 */
+.Leaving_message  {
+    /* margin:  50px auto; */
+    margin: auto;
+    border: 1px solid  #d7d7d7;
+    height: 500px;
+    padding-left: 55px;
+    padding-top: 55px;
+    width: 100%;
+}
+.Leaving_message_title {
+
+}
+/* inp */
+
+input{
+    border: transparent;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+/* .Leaving_message_title #Leaving_message_h1 */
+.Leaving_message_title #Leaving_message_h1{
+    font-size: 20px;
+    color: rgb(117, 255, 82);
+}
+.Leaving_message_title #Leaving_message_h3{
+    color: #d7d7d7;
+}
+.Leaving_message_content {
+    display: flex;
+
+}
+.Leaving_message form #btn{
+    width:40%;
+    background-color: rgb(99, 203, 132);
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    border: transparent;
+
+
+}
+/* ul_el */
+.ul_el {
+    margin-left: 0px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+
+}
+.ul_el .con_name {
+    color: #d7d7d7;
+}
+.ul_el .con_emi {
+    display: inline;
+    color: #d7d7d7;
+}
+.ul_el .con_content #ul_text li {
+    margin-top: 15px;
+    border-bottom: 1px solid #d7d7d7;
+    width: 100%;
+}
+.ul_el .con_content ul li {
+    word-wrap: break-word;
+}
+.ul_el .con_content .con_time {
+    float: right;
+    color: #d7d7d7;
+}
+/* 头像 */
+.ul_el .con_content #name_tx {
+    width: 35px;
+    height: 30px;
+    border-radius: 100px;
+    position: absolute;
+    left: -45px;
+    top: 30px;
+}
+#text {
+    width: 100%;
+    height: 120px;
+    word-wrap: break-word;
+}
+/* 评论区自适应 */
+
+.ul_text li {
+    margin-top: 15px;
+}
+
+
+/* 底部 */
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: #5a5656;
+
+}
+footer .footer_title {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 55px;
+}
+footer .footer_title #p1 {
+    font-size: 16px;
+}

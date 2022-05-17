@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+header {
+    background-color: #5a5656;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    z-index: 200;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    /* opacity: 0.8; */
+
+
+}
+
+header .login {
+    margin-left: 35px;
+    color: rgb(253, 190, 126);
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header .nav {
+    justify-self: end;
+}
+header #list {
+    position: absolute;
+    right: 135PX;
+    top: 45px;
+    display: none;  
+}
+header #list li {
+    clear: both;
+}
+header li {
+    padding: 15px;
+    float: left;
+    list-style-type: none;
+
+    
+}
+
+header #list li:hover {
+    background-color: rgb(253, 190, 126);
+}
+header ul li a {
+    color: #fff;
+}
+header .nav a {
+    margin: 0 24px;
+    color: #d7d7d7;
+}
+
+.nav_5:hover #list {
+    display: block;
+}
+
+header .burger-line {
+    display: none;
+}
+
+/* header_响应式 */
+
+@media screen and (min-width: 992px) {
+    .nav_bu_1282 a,
+    .burger {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 1282px) {
+header .nav {
+    display: none;
+}
+
+/* 显示3条小缸 */
+.burger {
+    position: absolute;
+    right: 15px;
+}
+ 
+header .burger-line1,
+header .burger-line2,
+header .burger-line3 {
+    background-color: #fff;
+    width: 37px;
+    height: 5px;
+    display: block;
+    margin: 5px;
+    display: flex;
+    justify-content:end;
+}
+/* 显示 */
+.nav_bu_1282 {
+    margin-top: 200px;
+    position: absolute;
+    right: 10px;
+    top: -140px;
+    background-color: rgb(66, 66, 66);
+    opacity: 0.5;
+    /* 默认隐藏_js_点击后显示 */
+    display: none;
+    }
+
+.nav_bu_1282  a {
+    color: #fff;
+    font-size: 16px;
+    margin: 15px;
+    display: flex;
+    justify-content: end;
+        
+}
+.nav_bu_1282:hover {
+    cursor: pointer;
+}
+
+/* login */
+header .login {
+    font-size: 16px;
+    position: absolute;
+}
+
+}
+
+/* 大于1280那么这个小的导航栏，就隐藏 */
+@media screen and (min-width: 1282px) {
+.nav_bu_1282 {
+    display:none;
+    }
+
+}
+body{
+    background: url(../imges/R-C.jpg)no-repeat;
+    width: 100%;
+    height: 100%;
+}
+#title{
+    margin-top: 70px;
+    text-align: center;
+    color: tomato;
+}
+#content-1{
+    color:darkturquoise;
+    text-align: center;
+    margin-top: 70px;
+}
+#content-2{
+    color: #333;
+    text-align: center;
+    font-size: 10px;
+}
+#content-3{
+    width: 85%;
+    height: 200px;
+    background-color: rgb(247, 243, 243,0.3);
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content-3-1{
+    width: 25%;
+    height: 80%;
+    margin: auto;
+    font-size: 15px;
+    color: rgb(109, 235, 222);
+    font-family:cursive;
+    text-align: center;
+}
+.R-C{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+#content-4{
+    margin: auto;
+    height: 20px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content-4-1{
+    width: 30%;
+    margin: auto;
+    background-color:rgb(247, 243, 243,0.3);
+    font-size: 18px;
+    color:rgb(109, 235, 222);
+    font-family:cursive;
+    text-align: center;
+}
+#content-5{
+    width: 800px;
+    margin: auto;
+    margin-top: 100px;
+    font-family:cursive;
+}
+#content-5 div {
+    margin-left: 20px;
+}
+#contrnt-5-1{
+    font-size: 40px;
+    color:rgb(109, 235, 222);
+}
+#contrnt-5-2{
+    font-size: 15px;
+    color: white;
+}
+#contrnt-5-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.text{
+    width: 300px;
+    height: 40px;
+}
+#text-1{
+    width: 690px;
+    height: 250px;
+    display:flex;
+    position: relative;
+    top: 10px;
+    margin-left: 62px;
+}
+#btn{
+    width: 100px;
+    height: 40px;
+}
+#content-6{
+    height: 20px;
+}
+/* 底部 */
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: #5a5656;
+
+}
+footer .footer_title {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 55px;
+}
+footer .footer_title #p1 {
+    font-size: 16px;
+}

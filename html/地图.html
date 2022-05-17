@@ -1,0 +1,73 @@
+<!--
+ * @UserName: HandStoen
+ * @LastEditTime: 2022-05-17 11:52:16
+ * @FilePath: \网页开发c:\Users\DELL\Desktop\团队展示-郑国富-邱明轩-李凯\html\地图.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="HandStoen 官网" charset="utf-8">
+  <meta name="HandStoen" content="HandStoen 地理位置">
+  <meta name="HandStoen" content="HandStoen 地理位置">
+  <link rel="fooicon" href="../imges/fooicon.icon">
+  <title>HandStoen 地理位置</title>
+  <!--引用百度地图API-->
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Z9hoaXq01xGyOQpKs7LjDteafjPZ8pHt"></script>
+</head>
+
+<body>
+  <!--百度地图容器-->
+  <div class="xc"
+    style="position:absolute;top: 0; color:rgb(253, 188, 158); z-index: 999;text-align: center;font-size: 35px;font-family: 'Courier New', Courier, monospace;display: flex;justify-content: center;align-items: center;left:35%;">
+    深圳市携创高级技工学校</div>
+  <div style="width:100%;height:100vw;border:#ccc solid 1px;font-size:12px" id="map"></div>
+</body>
+<script type="text/javascript">
+  //创建和初始化地图函数：
+  function initMap() {
+    createMap();//创建地图
+    setMapEvent();//设置地图事件
+    addMapControl();//向地图添加控件
+    addMapOverlay();//向地图添加覆盖物
+  }
+  function createMap() {
+    map = new BMap.Map("map");
+    map.centerAndZoom(new BMap.Point(114.203913, 22.644342), 15);
+  }
+  function setMapEvent() {
+    map.enableScrollWheelZoom();
+    map.enableKeyboard();
+    map.enableDragging();
+    map.enableDoubleClickZoom()
+  }
+  function addClickHandler(target, window) {
+    target.addEventListener("click", function () {
+      target.openInfoWindow(window);
+    });
+  }
+  function addMapOverlay() {
+  }
+  //向地图添加控件
+  function addMapControl() {
+    var scaleControl = new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_LEFT });
+    scaleControl.setUnit(BMAP_UNIT_METRIC);
+    map.addControl(scaleControl);
+    var navControl = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE });
+    map.addControl(navControl);
+    var overviewControl = new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_TOP_RIGHT, isOpen: true });
+    map.addControl(overviewControl);
+  }
+  var map;
+  initMap();
+  // 网页点击爱心特效
+  !function (e, t, a) {
+    function r() {
+      for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ?
+        (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999"); requestAnimationFrame(r)
+    } function n() { var t = "function" == typeof e.onclick && e.onclick; e.onclick = function (e) { t && t(), o(e) } } function o(e) { var a = t.createElement("div"); a.className = "heart", s.push({ el: a, x: e.clientX - 5, y: e.clientY - 5, scale: 1, alpha: 1, color: c() }), t.body.appendChild(a) } function i(e) { var a = t.createElement("style"); a.type = "text/css"; try { a.appendChild(t.createTextNode(e)) } catch (t) { a.styleSheet.cssText = e } t.getElementsByTagName("head")[0].appendChild(a) } function c() { return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")" } var s = []; e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) { setTimeout(e, 1e3 / 60) }, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"),
+      n(), r()
+  }(window, document);
+</script>
+
+</html>

@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+#box{
+    margin: 80px  auto;
+}
+header {
+    background-color: #5a5656;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    z-index: 200;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    /* opacity: 0.8; */
+    position: absolute;
+    top: 0;
+
+
+}
+
+header .login {
+    margin-left: 35px;
+    color: rgb(253, 190, 126);
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header .nav {
+    justify-self: end;
+}
+header #list {
+    position: absolute;
+    right: 130PX;
+    top: 49px;
+    display: none;  
+}
+header #list li {
+    clear: both;
+}
+header li {
+    padding: 15px;
+    float: left;
+    list-style-type: none;
+
+    
+}
+
+
+header #list li:hover {
+    background-color: rgb(253, 190, 126);
+}
+header ul li a {
+    color: #fff;
+}
+header .nav a {
+    margin: 0 24px;
+    color: #d7d7d7;
+}
+
+.nav_5:hover #list {
+    display: block;
+}
+
+/* header_center_img */
+/* 767 */
+header .burger-line {
+    display: none;
+}
+
+
+
+
+
+
+/* header_响应式 */
+@media screen and (max-width: 1282px) {
+    header .nav {
+        display: none;
+    }
+
+    /* 显示3条小缸 */
+    .burger {
+        position: absolute;
+        right: 15px;
+    }
+    
+    header .burger-line1,
+    header .burger-line2,
+    header .burger-line3 {
+        background-color: #fff;
+        width: 37px;
+        height: 5px;
+        display: block;
+        margin: 5px;
+        display: flex;
+        justify-content:end;
+    }
+    /* 显示 */
+    .nav_bu_1282 {
+        margin-top: 200px;
+        position: absolute;
+        right: 10px;
+        top: -140px;
+        background-color: rgb(66, 66, 66);
+        opacity: 0.5;
+        /* 默认隐藏_js_点击后显示 */
+        display: none;
+    }
+
+    .nav_bu_1282  a {
+        color: #fff;
+        font-size: 16px;
+        margin: 15px;
+        display: flex;
+        justify-content: end;
+        
+    }
+    .nav_bu_1282:hover {
+        cursor: pointer;
+    }
+
+    /* login */
+    header .login {
+        font-size: 16px;
+        position: absolute;
+    }
+
+
+}
+/* 大于1280那么这个小的导航栏，就隐藏 */
+@media screen and (min-width: 1282px) {
+    .nav_bu_1282,
+    .nav_bu_1282 a {
+        display:none;
+    }
+}
+#theme{
+    color: cornsilk;
+    font-family:serif;
+    font-size: 50px;
+    text-align: center;
+}
+#img-1{
+    width: 250px;
+    height: 332px;
+}
+#img-2{
+    width: 250px;
+    height: 322px;
+}
+#img-3{
+    width: 250px;
+    height: 333px;
+}
+#img-4{
+    width: 250px;
+    height: 333px;
+}
+#box-1-1{
+    margin: auto;
+    text-align: center;
+}
+.line{
+    border: 1px dashed lightgrey;
+    margin-top: 30px;
+}
+.size{
+    font-size: 15px;
+    color:grey;
+    font-family:cursive;
+}
+#size{
+    position: relative;
+    top: -18px;
+}
+.Personal_introduction{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    margin-top: 30px;
+}
+.personal{
+    display: flex;
+}
+.introduction{
+    width: 170px;
+    color: blanchedalmond;
+    font-family: monospace;
+    margin-top: 20px;
+    font-size: 20px;
+}
+@media screen  and (max-width:767px) {
+    .per {
+        width: 100%;
+    }
+    .per img {
+        width: 100%;
+    }
+}
+.line-1{
+    border: 1px dashed grey;
+}
+#Footer{
+    font-size: 20px;
+    color: blanchedalmond;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 25px;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    height: 100%;
+    background: black;
+}
+.snow{
+    background: white;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+/* 底部 */
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: #ffffff;
+}
+footer .footer_title {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    text-align: center;
+    padding-top: 55px;
+}
+footer .footer_title #p1 {
+    font-size: 16px;
+}

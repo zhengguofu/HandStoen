@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+body {
+    background-image: url(../imges/bg7.jpg  );
+    height: 1100px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+header {
+    background-color: #5a5656;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    z-index: 200;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    /* opacity: 0.8; */
+
+
+}
+
+header .login {
+    margin-left: 35px;
+    color: rgb(253, 190, 126);
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header .nav {
+    justify-self: end;
+}
+header #list {
+    position: absolute;
+    right: 135PX;
+    top: 45px;
+    display: none;  
+}
+header #list li {
+    clear: both;
+}
+header li {
+    padding: 15px;
+    float: left;
+    list-style-type: none;
+
+    
+}
+
+header #list li:hover {
+    background-color: rgb(253, 190, 126);
+}
+header ul li a {
+    color: #fff;
+}
+header .nav a {
+    margin: 0 24px;
+    color: #d7d7d7;
+}
+
+.nav_5:hover #list {
+    display: block;
+}
+
+header .burger-line {
+    display: none;
+}
+
+/* header_响应式 */
+
+@media screen and (min-width: 992px) {
+    .nav_bu_1282 a,
+    .burger {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 1282px) {
+header .nav {
+    display: none;
+}
+
+/* 显示3条小缸 */
+.burger {
+    position: absolute;
+    right: 15px;
+}
+ 
+header .burger-line1,
+header .burger-line2,
+header .burger-line3 {
+    background-color: #fff;
+    width: 37px;
+    height: 5px;
+    display: block;
+    margin: 5px;
+    display: flex;
+    justify-content:end;
+}
+/* 显示 */
+.nav_bu_1282 {
+    margin-top: 200px;
+    position: absolute;
+    right: 10px;
+    top: -140px;
+    background-color: rgb(66, 66, 66);
+    opacity: 0.5;
+    /* 默认隐藏_js_点击后显示 */
+    display: none;
+    }
+
+.nav_bu_1282  a {
+    color: #fff;
+    font-size: 16px;
+    margin: 15px;
+    display: flex;
+    justify-content: end;
+        
+}
+.nav_bu_1282:hover {
+    cursor: pointer;
+}
+
+/* login */
+header .login {
+    font-size: 16px;
+    position: absolute;
+}
+
+}
+
+/* 大于1280那么这个小的导航栏，就隐藏 */
+@media screen and (min-width: 1282px) {
+.nav_bu_1282 {
+    display:none;
+    }
+
+}
+
+.zpq{
+    /* 弹性布局 */
+    display: flex;
+    width: 1200px;
+    max-width: 1050px;
+    height: 400px;
+    margin-top: 50px;
+    float: right;
+}
+
+.item{
+    /* 相对定位 */
+    position: relative;
+    width: 60px;
+    margin: 15px;
+    border-radius: 30px;
+    margin-top: 40px;
+    /* 保持原有尺寸比例,裁剪长边 */
+    background-size: cover;
+    /* 定位背景图片为最中间 */
+    background-position: center;
+    /* 过渡 时长 贝塞尔曲线 */
+    transition: 0.5s cubic-bezier(0.05,0.61,0.41,0.95);
+    overflow: hidden;
+}
+
+.item .king{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+}
+
+.item .content{
+    display: flex;
+    position: absolute;
+    left: 10px;
+    right: 0;
+    bottom: 10px;
+    height: 40px;
+}
+
+.item .content .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    color: #fff;
+    width: 100%;
+}
+.item .content .text div{   
+    width: 1000px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.item .content .text .biaoti{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* 选中态样式 */
+.item.active{
+    flex: 1;
+    margin: 0;
+}
+
+.item.active .content{
+    bottom: 20px;
+    left: 20px;
+}
+
+.item.active .content .text div{
+    opacity: 1;
+}
+
+.a2a2{
+	width: 10px;
+	height: 45px;
+	margin: 150px auto;
+    position: absolute;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a2a2 img{
+    position: relative;
+    top: 350px;
+	padding: 10px 10px 15px ;
+	background:white;
+	border: 1px solid #ddd;
+	box-shadow: 2px 2px 3px rgba(50,50,50,0.4);
+}
+ 
+.A{
+    position: absolute;
+	width: 200px;
+	margin-right: 100%;
+}
+
+.a2a3{
+	width: 10px;
+	height: 45px;
+	margin: 150px auto;
+    position: absolute;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.a2a3 img{
+    position: relative;
+    top: 550px;
+	padding: 10px 10px 15px ;
+	background:white;
+	border: 1px solid #ddd;
+	box-shadow: 2px 2px 3px rgba(50,50,50,0.4);
+}
+ 
+.B{
+    position: absolute;
+	width: 200px;
+	margin-right: 100%;
+}
+
+/* 底部 */
+footer {
+    margin-top: 900px;
+    width: 100%;
+    height: 150px;
+    background-color: #5a5656;
+}
+footer .footer_title {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 55px;
+}
+footer .footer_title #p1 {
+    font-size: 16px;
+}
