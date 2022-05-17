@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet icon" href="./imges/fooicon.icon">
+    <link rel="stylesheet" href="./libs/glide/glide.core.min.css">
+    <link rel="stylesheet" href="./libs/glide/glide.theme.min.css">
+    <script src="./js/index.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <!-- 引入库 -->
+    <script src="./libs/scrollReveal/scrollreveal.min.js"></script>
+    <!-- 自动轮播 -->
+    <script src="./libs/glide/glide.min.js"></script>
+    <title>HandStoen 开发团队</title>
+    <style>
+        .totop {
+            position: fixed;
+            z-index: 300;
+            right: 50px;
+            bottom: 150px;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: rgb(255, 184, 148);
+            border-radius: 100%;
+            display: none;
+            color: #fff;
+            cursor: pointer;
+
+        }
+
+        html {
+            cursor: pointer;
+        }
+
+        .div-box {
+            width: 30px;
+            height: 30px;
+            font-size: 30px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="totop"> 回到顶部 </div>
+        <!-- 头部 -->
+        <header class="st">
+            <div class="login"> HandStoen 开发团队</div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="./index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="#first_about">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="#first_successful">成功案例</a>
+                    </li>
+                    <li>
+                        <a href="#first_give_service">服务</a>
+                    </li>
+                    <li class="nav_5">
+                        <a href="">更多</a>
+                        <ul id="list">
+
+                            <li><a href="./团队个人简介.html" id="se" style="" target="_blank">团队介绍</a></li>
+                            <li><a href="./html/照片墙.html" target="_blank">照片墙@</a></li>
+                            <li><a href="./html/留言/留言给我.html" target="block">留言给我</a></li>
+                            <li><a href="./html/新闻网/index.html" target="block">新闻热点</a></li>
+                            <li><a href="./html/地图.html" target="_blank">地理位置</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="./联系我们.html" target="_blank ">联系我们</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="burger">
+                <div class="burger-line1"></div>
+                <div class="burger-line2"></div>
+                <div class="burger-line3"></div>
+
+            </div>
+            <div class="nav_bu_1282">
+
+                <ul>
+                    <li>
+                        <a href="./index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="#first_about">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="#first_successful">成功案例</a>
+                    </li>
+                    <li>
+                        <a href="#first_give_service">服务</a>
+                    </li>
+                    <li class="nav_5">
+                        <a href="./团队个人简介.html" id="se" style="" target="block">团队介绍</a>
+                    </li>
+                    <li><a href="./html/照片墙.html" target="_blank">照片墙@</a></li>
+                    <li><a href="./html/留言/留言给我.html" target="_blank">留言给我</a></li>
+                    <li><a href="./html/新闻网/index.html" target="_blank">新闻热点</a></li>
+                    <li><a href="./html/地图.html" target="_blank">地理位置</a></li>
+
+                    <li>
+                        <a href="./联系我们.html" target="_blank">联系我们</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </header>
+        <!-- 轮播图-使用了glide库 -->
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <div class="glide__slides">
+                    <!-- 第一主轮播 -->
+                    <div class="glide__slide">
+                        <!-- 轮播内容_center文字 -->
+                        <div class="slide-caption">
+                            <h1>专业开发团队</h1>
+                            <h3>
+                                措施是执行中最重要的纽带，抓住这根纽带就不会有失手的可能！永远不要改变既定目标，只要增加措施就一定可以做到
+                            </h3>
+                        </div>
+                        <div class="backdrop"></div>
+                        <img src="./imges/n1.png" alt="">
+                    </div>
+                    <!-- 第二主轮播 -->
+                    <div class="glide__slide">
+                        <!-- 轮播内容_center文字 -->
+                        <div class="slide-caption">
+                            <h1>科技改变世界</h1>
+                            <h3>
+                                科技创新生活，让科技融入生活
+                            </h3>
+
+
+                        </div>
+                        <div class="backdrop"></div>
+                        <img src="./imges/背景图.jpg" alt="">
+                    </div>
+                    <!-- 第三主轮播 -->
+                    <div class="glide__slide">
+                        <!-- 轮播内容_center文字 -->
+                        <div class="slide-caption">
+                            <h1>智能科技生活</h1>
+                            <h3>
+                                智能让生活更加美好
+                            </h3>
+
+
+                        </div>
+                        <div class="backdrop"></div>
+                        <img src="./imges/首页_成功案例图片/web/9.jpg" alt="">
+                    </div>
+                    <!-- 第四主轮播 -->
+                    <div class="glide__slide">
+                        <!-- 轮播内容_center文字 -->
+                        <div class="slide-caption">
+                            <h1>创新改变市场，成功赢得希望</h1>
+                            <h3>
+                                优化管理，以人为本；解放思想，积极创新。
+                            </h3>
+
+
+                        </div>
+                        <div class="backdrop"></div>
+                        <img src="./imges/关于我们/品牌创新.jpg" alt="">
+                    </div>
+                </div>
+                <!-- 左右按钮 -->
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                        < </button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                                >
+                            </button>
+                </div>
+
+            </div>
+        </div>
+        <!-- 关于我们 -->
+        <div class="about_us" id="first_about">
+
+
+            <div class="about_us_title">
+                <h1 id="about">关于我们</h1>
+                <h3 id="about_ln">
+                    团结和服务是我们最大的前提，信心和激情是我们最好的准备
+                </h3>
+                <div class="introduce">
+                    <div class="introduce_title">
+                        <h1>服务理念</h1>
+                    </div>
+                    <img src="./imges/n1.png" alt="">
+                    <div class="introduce_content">
+                        <h3>
+                            客户的满意是检验我们的唯一标准
+                        </h3>
+                    </div>
+                </div>
+                <div class="introduce">
+                    <div class="introduce_title">
+                        <h1>团队口号</h1>
+                    </div>
+                    <img src="./imges/关于我们/团队口号.jpg" alt="">
+                    <div class="introduce_content">
+                        <h3>
+                            以努力的精神打造优秀的团队，为共同奋斗目标共同努力！
+                        </h3>
+                    </div>
+                </div>
+                <div class="introduce">
+                    <div class="introduce_title">
+                        <h1>品牌创新</h1>
+                    </div>
+                    <img src="./imges/关于我们/品牌创新.jpg" alt="">
+                    <div class="introduce_content">
+                        <h3>
+                            财富不选国家人种，创新不择贫富阶级。
+                        </h3>
+                    </div>
+                </div>
+                <div class="introduce">
+                    <div class="introduce_title">
+                        <h1>主要经营</h1>
+                    </div>
+                    <img src="./imges/关于我们/主要经营.jpg" alt="">
+                    <div class="introduce_content">
+                        <h3>
+                            网页开发，设计，安卓，微信小程序，等欢迎联系
+                        </h3>
+                    </div>
+                </div>
+                <div class="introduce">
+                    <div class="introduce_title">
+                        <h1>团队技术</h1>
+                    </div>
+                    <img src="./imges/关于我们/团队技术.jpg" alt="">
+                    <div class="introduce_content">
+                        <h3 style="font-size: 10px;">
+                            掌握现代最新科技能力，多年开发经验，专业团队
+                        </h3>
+                    </div>
+                </div>
+                <div class="introduce">
+                    <div class="introduce_title">
+                        <h1>团队信誉度</h1>
+                    </div>
+                    <img src="./imges/关于我们/信誉度.jpg" alt="">
+                    <div class="introduce_content">
+                        <h3 style="font-size: 10px;">
+                            信以立志，信以守身，信以处世，信以待人，毋忘立信，当必有诚。
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 成功案例 -->
+        <div class="successful_case" id="first_successful">
+            <div class="successful_case_title">
+                <h1 id="successful">成功案例</h1>
+
+                <h3 id="successful_cs">
+                    客户的满意是检验我们的唯一标准
+                </h3>
+                <div class="select_succ_btn">
+                    <button id="web">web</button>
+                    <button id="ps">设计</button>
+                    <button id="wx">小程序</button>
+                </div>
+                <div class="successful_content">
+                    <ul id="web_content" style="display: block;">
+                        <li><img src="./imges/首页_成功案例图片/web/1.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/web/2.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/web/3.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/web/4.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/web/5.jpg" alt=""></li>
+                        <br>
+                        <li><img src="./imges/首页_成功案例图片/web/6.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/web/7.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/web/8.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/web/9.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/web/10.jpg" alt=""></li>
+
+                        <br>
+                    </ul>
+                    <ul id="ps_content" style="display: none;">
+                        <li><img src="./imges/首页_成功案例图片/ps/1.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/ps/2.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/ps/3.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/ps/4.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/ps/5.jpg" alt=""></li>
+                        <br>
+                        <li><img src="./imges/首页_成功案例图片/ps/6.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/ps/7.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/ps/8.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/ps/9.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/ps/10.jpg" alt=""></li>
+                        <br>
+                    </ul>
+                    <ul id="wx_content" style="display: none;">
+                        <li><img src="./imges/首页_成功案例图片/wx/1.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/wx/2.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/wx/3.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/wx/4.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/wx/5.jpg" alt=""></li>
+                        <br>
+                        <li><img src="./imges/首页_成功案例图片/wx/6.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/wx/7.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/wx/8.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/wx/9.jpg" alt=""></li>
+                        <li><img src="./imges/首页_成功案例图片/wx/10.jpg" alt=""></li>
+                        <br>
+                    </ul>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- 服务 -->
+        <div class="give_service" id="first_give_service">
+
+            <div class="give_service_title">
+                <h3 id="give_service_title_EngLang">
+                    Our services
+                </h3>
+                <h1 id="give_service_title_h1">我们的服务</h1>
+
+                <h3 id="give_service_content_ab">
+                    客户至上，服务周到 ; 质量第一，科技领先。
+                </h3>
+                <button id="give_service_btn">
+                    查看更多
+                </button>
+                <div class="give_service_content">
+                    <div class="Progress_bar">
+                        <div class="Progress_bar_title_1">
+                            html+css+js+jquery+php+mysq
+                        </div>
+                        <div class="Progress_bar_1">
+                            <div id="pr_web_1"><span id="pr_web_span_1">0</span> </div>
+                        </div>
+
+                        <div class="Progress_bar_title_2">
+                            ps_axure
+                        </div>
+                        <div class="Progress_bar_2">
+                            <div id="pr_web_2"><span id="pr_web_span_2">0</span> </div>
+                        </div>
+
+                        <div class="Progress_bar_title_3">
+                            微信小程序
+                        </div>
+                        <div class="Progress_bar_3">
+                            <div id="pr_web_3"><span id="pr_web_span_3">0</span> </div>
+                        </div>
+
+                        <div class="Progress_bar_title_4">
+                            android开发
+                        </div>
+                        <div class="Progress_bar_4">
+                            <div id="pr_web_4"><span id="pr_web_span_4">0</span> </div>
+                        </div>
+
+                        <div class="Progress_bar_title_5">
+                            数据抓取与可视化分析
+                        </div>
+                        <div class="Progress_bar_5">
+                            <div id="pr_web_5"><span id="pr_web_span_5">0</span> </div>
+                        </div>
+
+                        <div class="pr6_w" style="display: none;" id="pr6">
+                            <div class="Progress_bar_title_6">
+                                客户满意度：
+                            </div>
+                            <div class="Progress_bar_6">
+                                <div id="pr_web_6"><span id="pr_web_span_6">0</span></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="give_right">
+                    <p id="login_p">
+                        HandStoen 开发团队
+                    </p>
+                    <div id="zgf">
+                        HandStoen 开发团队提供技术服务
+                        <br>
+                        如有疑问请及时<a href="./html/联系我们.html" style="color: #ff8400;" target="block">联系我们</a>
+                        <br>
+                        或直接投递邮箱：<a href="https://mail.qq.com/" style="color: #ff8400;"
+                            target="block">2364976018@qq.com</a>
+                        <br>
+                        创始人：郑国富
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            <div class="footer_title">
+                HandStoen 开发团队 版权所有
+                <p id="p1">
+                    此官网由HandStone 开发团队版权所有，
+                    侵犯著作权以及与著作权有关的权益的行为，
+                    将付出法律责任
+                </p>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+    </div>
+</body>
+<script>
+
+</script>
+
+</html>
+<!-- 1282 -->
+<!-- 992 -->

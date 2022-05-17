@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/everyone.css">
+    <link rel="stylesheet icon" href="./imges/fooicon.icon.jpg">
+    <title>团队介绍</title>
+    <script>
+        window.onload = function () {
+            // 设置小于1282大小点击就显示，导航栏
+            var burger = document.querySelector('.burger');
+            // 导航栏
+            var nav_bu_1282 = document.querySelector('.nav_bu_1282');
+            // 初始化变量——用于判断点击两次
+            var flag_burger = 0;
+            // 点击显示导航栏
+            burger.addEventListener('click', function (e) {
+                if (flag_burger == 0) {
+                    nav_bu_1282.style.display = 'block';
+                    // 把三个横杠改为叉叉
+                    burger.innerHTML = '<div>X</div>';
+                    // 并且设置样式
+                    burger.style.color = '#fff';
+                    burger.style.fontSize = '30px';
+                    burger.style.fontWeight = 'bold';
+                    burger.style.cursor = 'pointer';
+                    flag_burger = 1;
+                } else {
+                    // 隐藏导航栏
+                    nav_bu_1282.style.display = 'none';
+                    // 继续显示三条拫杠
+                    burger.innerHTML = '<div>=</div>';
+                    // 设置样式
+                    burger.style.color = '#fff';
+                    burger.style.fontSize = '30px';
+                    burger.style.fontWeight = 'bold';
+                    burger.style.cursor = 'pointer';
+                    flag_burger = 0;
+                };
+
+            });
+        };
+    </script>
+</head>
+
+
+<body>
+    <div id="box">
+        <!-- 头部 -->
+        <header class="st">
+            <!-- <div id="back"></div> -->
+            <div class="login"> HandStoen 开发团队</div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="./index.html" target="_blank">首页</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#first_about" target="_blank">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#first_successful" target="_blank">成功案例</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#first_give_service" target="_blank"> 服务</a>
+                    </li>
+                    <li class="nav_5">
+                        <a href="./团队个人简介.html" id="se" target="_blank">团队介绍</a>
+                        <ul id="list">
+                            <li><a href="./html/照片墙.html" target="_blank">照片墙@</a></li>
+                            <li><a href="./html/留言/留言给我.html" target="_blank">留言给我</a></li>
+                            <li><a href="./html/新闻网/index.html" target="_blank">新闻热点</a></li>
+                            <li><a href="./html/地图.html" target="_blank">地理位置</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./联系我们.html" target="_blank">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="burger-line1"></div>
+                <div class="burger-line2"></div>
+                <div class="burger-line3"></div>
+            </div>
+            <div class="nav_bu_1282" style="display: none;">
+                <a href="./index.html" target="block">首页</a>
+                <a href="./index.html#first_about" target="block">关于我们</a>
+                <a href="./index.html#first_successful" target="_blank">成功案例</a>
+                <a href="./html/照片墙.html" target="_blank">照片墙@</a>
+                <a href="./html/留言/留言给我.html" target="_blank">留言给我</a>
+                <a href="./html/新闻网/index.html" target="_blank">新闻热点</a>
+                <a href="./index.html#first_give_service" target="_blank">我们的服务</a>
+                <a href="./团队个人简介.html" target="_blank">团队介绍</a>
+                <a href="./html/地图.html" target="_blank">地理位置</a>
+                <a href="./联系我们.html" target="_blank">联系我们</a>
+            </div>
+        </header>
+        <div id="theme">团队介绍</div>
+        <div id="box-1-1">
+            <div class="line"></div>
+            <div id="size">
+                <div class="size">Handstone</div>
+                <div class="size">团队出品</div>
+            </div>
+        </div>
+        <div class="Personal_introduction per">
+            <div class="personal">
+                <div><img src="imges/zgf-1.jpg" alt="" id="img-1"></div>
+                <div class="introduction">
+                    <div>郑国富</div>
+                    <div>首席构架师</div>
+                    <div class="line-1"></div>
+                    <div> 熟练掌握前端，以及前端主流框架（vue），有多年的开发经验
+                        精通安卓开发，以及微信小程序，和数据抓取功能，
+                        有意向欢迎联系：2364976018@qq.com</div>
+                </div>
+            </div>
+            <div class="personal">
+                <div><img src="imges/lk.jpg" alt="" id="img-2"></div>
+                <div class="introduction">
+                    <div>李凯</div>
+                    <div>web前端</div>
+                    <div class="line-1"></div>
+                    <div>我性格开朗、思维活跃;做事有责任心,条理性强;易与人相处,热爱运动，具有很强的团队精神和协调能力</div>
+                </div>
+            </div>
+        </div>
+        <div class="Personal_introduction per">
+            <div class="personal">
+                <div><img src="imges/qmx.jpg" alt="" id="img-3"></div>
+                <div class="introduction">
+                    <div>邱明轩</div>
+                    <div>前端开发</div>
+                    <div class="line-1"></div>
+                    <div>本人诚实，热情，具有良好的人际关系，极富创造力与创新意识，具有较强的逻辑思维和组织协调能力，对事情认真。</div>
+                </div>
+            </div>
+            <div class="personal">
+                <div><img src="imges/未标题-1.jpg" alt="" id="img-4"></div>
+                <div class="introduction">
+                    <div>期待你的到来</div>
+                    <div>职业</div>
+                    <div class="line-1"></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="line"></div>
+        </div>
+        <footer>
+            <div class="footer_title">
+                HandStoen 开发团队 版权所有
+                <p id="p1">
+                    此官网由HandStone 开发团队版权所有，
+                    侵犯著作权以及与著作权有关的权益的行为，
+                    将付出法律责任
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        //获取屏幕宽高
+        var windowWidth = window.screen.width;
+        var windowHeight = window.screen.height;
+
+        //创建雪花
+        function createSnow() {
+            var left = 0;
+            var top = 0;
+
+            //定义一个初始化随机数,使雪花在屏幕中
+            // 雪花距离左边
+            var left_random = Math.random() * windowWidth;
+            // 距离上面
+            var top_random = Math.random() * windowHeight;
+            // 动态添加div
+            var div = document.createElement('div');
+
+            // 添加雪花
+            div.className = 'snow';
+            div.style.transform = 'scale(' + (Math.random()) + ')'
+
+            document.body.appendChild(div);
+
+            //雪花飘落
+            setInterval(function () {
+
+                div.style.left = left_random + left + 'px';
+                div.style.top = top_random + top + 'px'
+                left += 0.2;
+                top += 0.2;
+
+                //如果雪花跑到屏幕外面了,让雪花重新返回屏幕顶部
+                if (left_random + left >= windowWidth) {
+                    left_random = Math.random();
+                    left = 0;
+                }
+
+                if (top_random + top >= windowHeight) {
+                    top_random = Math.random();
+                    top = 0;
+                }
+            }, 10)
+
+        }
+        for (var i = 0; i < 200; i++) {
+            createSnow()
+        }
+        // 网页点击爱心特效
+        !function (e, t, a) {
+            function r() {
+                for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ?
+                    (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999"); requestAnimationFrame(r)
+            } function n() { var t = "function" == typeof e.onclick && e.onclick; e.onclick = function (e) { t && t(), o(e) } } function o(e) { var a = t.createElement("div"); a.className = "heart", s.push({ el: a, x: e.clientX - 5, y: e.clientY - 5, scale: 1, alpha: 1, color: c() }), t.body.appendChild(a) } function i(e) { var a = t.createElement("style"); a.type = "text/css"; try { a.appendChild(t.createTextNode(e)) } catch (t) { a.styleSheet.cssText = e } t.getElementsByTagName("head")[0].appendChild(a) } function c() { return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")" } var s = []; e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) { setTimeout(e, 1e3 / 60) }, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"),
+                n(), r()
+        }(window, document);
+
+
+    </script>
+</body>
+
+</html>
